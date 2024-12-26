@@ -7,7 +7,7 @@ var input=null;
 const rockbtn= document.getElementById("rock");
 rockbtn.addEventListener('click',function (){
      input=1;
-    console.log("r");
+    
     check();
 })
 
@@ -15,7 +15,7 @@ const paperbtn= document.getElementById("paper");
 
 paperbtn.addEventListener('click',function (){
      input=2;
-    console.log("p");
+ 
     check();
 })
 
@@ -39,7 +39,7 @@ function check(){
     }else if(input===1 && random===3){
         result.innerText="Mine Scissors ! Congratulations!! You Won!";
     }else if(input===2 && random == 1){
-        result.innerText="Mine Rock ! You Lose !! Try Again Refreshing the page";
+        result.innerText="Mine Rock! Congratulations !! You Won";
     }else if(input===2 && random===3){
         result.innerText="Mine Scissors! You Lose !! Try Again Refreshing the page";
     }else if(input === 3 && random ===1){
