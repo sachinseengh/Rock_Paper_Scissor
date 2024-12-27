@@ -1,9 +1,14 @@
+*{
+   color:black;
+}
 
 .title{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
 
 .mainarea{
 
@@ -11,14 +16,33 @@
     height:500px;
     border:2px solid green;
     padding:50px;
+    box-shadow: 0 0 40px 1px grey;
 
+    
+    
 }
 .control{
     display: flex;
     gap: 50px;
     justify-content: center;
+    
+    
+}
+.btn{
+    box-shadow: 5px 3px 5px 1px black;
 }
 .icon{
     height:150px;
     width: 150px;
+}
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or 'contain' depending on preference */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .4;
+    filter:blur(5px);
 }
