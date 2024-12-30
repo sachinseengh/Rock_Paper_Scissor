@@ -24,11 +24,16 @@ const scissorbtn= document.getElementById("scissor");
 
 scissorbtn.addEventListener('click',function (){
 input=3;
-    console.log("s");
+    
 check();
 })
 
+
+let step =0;
 function check(){
+    step ++;
+
+if(step===1){
 
     if(input === random){
         result.innerText="Draw Refresh the page and Try Again";
@@ -47,6 +52,10 @@ function check(){
     }else if(input ===3 && random ===2){
         result.innerText=" Mine Paper! Congratulations!! You Won!";
     }
+}else{
+    result.innerText="You have already Choosen! Restart The game";
+
+}
 
 }
 
