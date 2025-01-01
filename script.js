@@ -1,6 +1,6 @@
 const result = document.getElementById("result");
 const random = Math.floor(Math.random()*3)+1;
-console.log(random);
+
 
 var input=null;
 
@@ -33,7 +33,6 @@ let step =0;
 
 function check(){
     step ++;
-
 if(step===1){
 
     if(input === random){
@@ -55,10 +54,16 @@ if(step===1){
     }
 }else{
     result.innerText="You have already Choosen! Restart The game";
-
+}
 }
 
-}
+
+const restartbtn = document.getElementById("restart");
+
+restartbtn.addEventListener('click',function(){
+    location.reload();
+})
+
 
 
 
